@@ -42,6 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   ];
 
+  // String? titleInput;
+  // String? amountInput;
+  final titleController = TextEditingController();
+  final amountController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,14 +72,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   TextField(
+                    controller: titleController,
                     decoration: InputDecoration(
                       labelText: "Title",
                     ),
+                    // onChanged: (val) {
+                    //   titleInput = val;
+                    // },
                   ),
                   TextField(
+                    controller: amountController,
                     decoration: InputDecoration(
                       labelText: "Amount",
                     ),
+                    // onChanged: (val) => amountInput = val,
                   ),
                   TextButton(
                     onPressed: () {},
