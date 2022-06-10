@@ -29,7 +29,7 @@ class TransactionList extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Text(
                   "\$${tx.amount}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     color: Colors.purple,
@@ -41,14 +41,14 @@ class TransactionList extends StatelessWidget {
                 children: [
                   Text(
                     tx.title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
                     DateFormat.yMMMd().format(tx.date),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.grey,
                     ),
                   ),
