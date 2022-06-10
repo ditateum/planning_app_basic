@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       padding: const EdgeInsets.all(10),
                       child: Text(
-                        tx.amount.toString(),
+                        "\$${tx.amount}",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Text(
-                          tx.date.toIso8601String(),
+                          "${tx.date}",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
