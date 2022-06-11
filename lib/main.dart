@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import './widgets/transaction_list.dart';
 import './widgets/new_transaction.dart';
@@ -17,6 +18,19 @@ class MyApp extends StatelessWidget {
       title: 'Personal Expenses',
       theme: ThemeData(
         primarySwatch: Colors.purple,
+        fontFamily: GoogleFonts.quicksand().fontFamily,
+        textTheme: ThemeData.light().textTheme.copyWith(
+              titleMedium: GoogleFonts.openSans(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+        appBarTheme: AppBarTheme(
+          titleTextStyle: GoogleFonts.openSans(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.purple,
           accentColor: Colors.amber,
